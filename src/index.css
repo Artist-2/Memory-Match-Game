@@ -1,0 +1,80 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #fff;
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; 
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px; 
+  justify-content: center;
+  align-items: center;
+  width: 80vw; 
+  height: 80vw; 
+  max-width: 400px; 
+  max-height: 400px; 
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+button {
+  margin-top: 10px; 
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.start-page {
+  position: relative;
+}
+
+.developer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 11px; 
+}
